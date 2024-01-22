@@ -27,7 +27,7 @@ function updateClock(){
         let months = ["Январь", "Февраль", "Март", "Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь",];
         let week = ["Понидельник","Вторник","Среда","Четверг","Пятница","Субота","Воскресеня",];
         let ids = ["dayname","month","daynum","year","hour","minutes","seconds","period"];
-        let values = [week[dname],months[mo],dnum,yr,hou,min,sec,pe];
+        let values = [week[dname - 1],months[mo],dnum,yr,hou,min,sec,pe];
         for (let i = 0 ; i < ids.length;i++)
         document.getElementById(ids[i]).firstChild.nodeValue = values[i];
 
